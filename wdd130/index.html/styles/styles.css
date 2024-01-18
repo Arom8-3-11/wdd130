@@ -1,3 +1,5 @@
+/********* Nav *********/
+
 nav{
     background-color: steelblue;
     padding: 10px;
@@ -7,18 +9,32 @@ nav{
     
 nav a {
     color: white;
-    display: block 
-    padding: 20px
+    display: block;
+    padding: 20px;
 }
     /* 1. foreground or font color will be white */
     /* 2. display will change from default of inline to block */
     /* 3. each anchor tag will have padding of 20px */
     
+/********* Headers+text *********/
+
 h1 {
     color: steelblue;
 }
     /* 1. the foreground, font color is set to steelblue */
-img {
+
+p {
+    padding: 0;
+}
+    /*1. padding between the paragraph content and the border is set to 10 pixels */
+
+/********* MAIN *********/
+
+main {
+    max-width: 840px;
+}
+
+main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
@@ -29,7 +45,32 @@ img {
     /* 2. border shortcut that names the width, type of border, and color of the border */
     /* 3. padding between the image and the border */
     /* 4. a box shadow around the image border with zro offset and depth of 30px in gray */
-p {
-    padding: 10px;
+
+/********* ASIDE *********/
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
 }
-    /*1. padding between the paragraph content and the border is set to 10 pixels */
+
+aside img {
+    width: 200px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 20px gray; 
+    /* only width change necessary since the first "img" settings are the same except the width */
+}
+
+/********* FOOTER *********/
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
