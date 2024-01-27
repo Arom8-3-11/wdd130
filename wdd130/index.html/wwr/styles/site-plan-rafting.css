@@ -107,14 +107,15 @@ main p {
     width: 140px;
 }
 
-.oxfo { background-color: #122347;}
-.moss {background-color: var(--secondary-color);}
-.air {background-color: var(--accent2-color); color: black;}
-.dodge {background-color: var(--nav-hover-background-color);}
+.oxfo { background-color: #122347; text-shadow: 5px 5px 5px black;}
+.moss {background-color: var(--secondary-color); text-shadow: 5px 5px 5px black;}
+.air {background-color: var(--accent2-color); color: black; text-shadow: 5px 5px 5px var(--accent1-color);}
+.dodge {background-color: var(--nav-hover-background-color); text-shadow: 5px 5px 5px black}
 .plat {
     color: black;
     border: 3px solid black;
     background-color: var(--primary-color);
+    text-shadow: 4px 4px 5px black
 }
 
 
