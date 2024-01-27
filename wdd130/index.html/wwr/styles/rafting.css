@@ -74,6 +74,11 @@ body {
 }
 
 
+
+
+
+
+
 /******** main ********/
 
 .hero {
@@ -98,7 +103,7 @@ h1 {
     text-align: center;
     text-shadow: 7px 7px 8px var(--accent1-color);
     text-decoration: underline;
-    position: absolute;
+    position: absolute; 
     top: 22px;
     left: 50%;
     transform: translateX(-50%); /* this helps with absolute centering */
@@ -200,20 +205,28 @@ footer p {
     line-height: 1.5;
 }
 
-nav img {
+.sociallinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40px;
+    margin: auto;
+}
+
+.sociallinks a{ 
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.sociallinks img{
     width: 40px;
     padding: 5px;
-    margin: 0 40px;
+    margin: 0 20px;
     justify-content: space-evenly;
     box-shadow: 0 0 19px black;
     background-color: var(--nav-link-color);
+    display: block;
 }
 
-nav img a{ 
-    background-color: white;
-    display: block;
-    text-decoration: none;
+.sociallinks a:hover img {
+    transform: scale(.9);
 }
-/* nav img a:hover {
-    background-color: var(--nav-hover-background-color);
-} */
