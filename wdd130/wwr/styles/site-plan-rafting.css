@@ -126,6 +126,7 @@ nav{
     font-size: 1.2rem;
     padding: 10px;
     display: flex;
+    justify-content: space-evenly;
 }
 
 nav a{
@@ -135,13 +136,6 @@ nav a{
     padding: 1rem;
     border: 5px solid;
     border-color: #476C21 #334E18 #A3D473 #5C8C2B;
-}
-
-.nav2 {
-    justify-content: space-evenly;
-}
-
-.nav2 a {
     width:100px;
     text-align: center;
 }
