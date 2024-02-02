@@ -89,8 +89,6 @@ p { padding: 20px 40px 10px 20px; }
 
 main {
     padding: 30px;
-    /* display: grid; */
-    align-items: center;
     grid-column: 2/3;
     margin: 1rem;
 }
