@@ -21,14 +21,16 @@
 
 
 
+
+
 /********* Nav *********/
 
 nav{
     background-color: steelblue;
-    padding: 10px ;
-    padding-bottom: 10px;
+    padding: 1rem;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 /* 1. background color will be the color steelblue, which is a valid, named color  */
 /* 2. padding or area between the content and border is set to 10 pixels for readability */
@@ -38,9 +40,12 @@ nav a {
     background-color: var(--nav-background-color);
     text-shadow: 5px 5px 8px black;
     text-align: center;
-    width: 160px;
+    width: 100%;
+    max-width: 840px;
     display: block;
-    padding: 20px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1rem;
     box-shadow: 3px 2px 2px 2px black;
     border: 5px solid;
     border-color:  #034275 #022F54 #1982D8 #0867B5;
@@ -56,7 +61,10 @@ nav a:hover {
     border-color: #0867B5 #034275 #022F54 #1982D8;
 }
 
-
+header, .grid, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
 
 
 /********* Headers+text general *********/
@@ -68,23 +76,23 @@ h1 {
 }
     /* 1. the foreground, font color is set to steelblue */
 
-p { padding: 40px 100px 30px 30px; }
+p { padding: 20px 40px 10px 20px; }
     /*1. padding between the paragraph content and the border is set to 10 pixels */
-
-
-
-
 
 
 /********* MAIN *********/
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 main {
-    max-width: 840px;
-    padding-top: 30px;
-    padding-left: 16px;
-    padding-bottom: 30px;
-    /* padding: 30px; */
-    /* margin: auto; */
+    padding: 30px;
+    /* display: grid; */
+    align-items: center;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 main img {
@@ -119,7 +127,7 @@ ul li {
 /***** Class Selectors *****/
 
 .box {
-    margin: 1rem;
+    margin: 10px .5px;
     border: 1px solid rgba(0,0,0,.2);
     padding: 1rem;
     background-color: #eee;
@@ -134,6 +142,8 @@ aside {
     width: 20rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     box-shadow: 0 0 20px gray; 
     /* margin: auto -important; */
 }
@@ -146,7 +156,7 @@ aside h2 {
 }
 
 aside img {
-    width: 200px;
+    width: 250px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
@@ -158,6 +168,7 @@ aside img {
 aside p {
     padding: 10px 20px;
     text-align: center;
+    line-height: 2;
 }
 
 
@@ -167,7 +178,6 @@ aside p {
 /********* FOOTER *********/
 
 footer {
-    margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 }
