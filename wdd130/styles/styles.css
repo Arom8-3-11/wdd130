@@ -40,13 +40,13 @@ nav a {
     background-color: var(--nav-background-color);
     text-shadow: 5px 5px 8px black;
     text-align: center;
-    width: 100%;
+    width: 17%;
     max-width: 840px;
     display: block;
     padding: 5px;
     text-decoration: none;
     font-size: 1rem;
-    box-shadow: 3px 2px 2px 2px black;
+    box-shadow: 5px 5px 5px 3px black;
     border: 5px solid;
     border-color:  #034275 #022F54 #1982D8 #0867B5;
 }
@@ -59,6 +59,7 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
     text-decoration: none;
     border-color: #0867B5 #034275 #022F54 #1982D8;
+    box-shadow: none;
 }
 
 header, .grid, footer{
