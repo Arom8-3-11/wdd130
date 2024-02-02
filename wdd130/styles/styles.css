@@ -72,8 +72,11 @@ header, .grid, footer{
 
 h1 {
     color: steelblue;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 4px 30px 0.25px gray;
     text-align: center;
+    border: 2px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--primary-color);
 }
     /* 1. the foreground, font color is set to steelblue */
 
