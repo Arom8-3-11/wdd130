@@ -16,15 +16,28 @@
 }
 
 header {
+    display: grid;
     padding: 60px 20px;
-    font-size: 20px;
+    font-size: clamp(16px, 3.5vw, 20px);
+    grid-template-columns: 3fr  1fr;
+    align-items: center;
+    max-width: 960px;
+    height: auto;
+    /* display: none; */
 }
 
 header nav {
+    /* grid-template-columns: 3fr  1fr; */
     background-color: var(--nav-background-color);
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
+    max-width: 100%;
+    width: clamp(600px, 70vw, 800px);
+    grid-column: 3/4;
+    /* align-items: center; */
+    /* margin-left: 12px; */
+    
 }
 
 header nav a {
@@ -35,6 +48,8 @@ header nav a {
     text-align: center;
     border: 5px solid;
     border-color: #476C21 #334E18 #A3D473 #5C8C2B;
+    background-color: var(--nav-background-color);
+    height:auto;
 }
 
 header nav a:hover {
@@ -49,21 +64,33 @@ header img {
     margin: auto;
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: clamp(200px, 23vw, 300px);
 }
+
+
+
+
 
 p {
     font-family: var(--paragraph-font);
 }
 
+
+
+
+
 body {
-    max-width: 1300px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
     background-color: var(--secondary-color);
     border: 15px solid var(--accent1-color);
     padding: 15px;
     color: var(--primary-color);
 }
+
+
+
 
 /******** main ********/
 
@@ -120,7 +147,6 @@ article p {
 
 article img {
     float: right;
-    margin: auto;
     margin: 10px;
     width: 200px;
     padding: 2px;
@@ -131,7 +157,8 @@ section p {
     margin: 10px auto;
     padding: 10px 90px;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    line-height: 2;
 }
 
 section img {
@@ -142,6 +169,19 @@ section img {
     text-align: center;
     background-color: var(--accent1-color);
 }
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+}
+
+figcaption{
+    font: var(--paragraph-font);
+    text-align: center;
+}
+
 
 div img {
     display: flex;
@@ -157,45 +197,116 @@ h2 {
     text-decoration: underline;
 }
 
+
+
+
+
 /***** footer *****/
 
 footer {
-    text-align: center;
+    display: grid;
+
     background-color: var(--accent1-color);
     margin: 30px 10px;
     padding: 20px 10px;
     border: 3px solid var(--accent2-color);
+    grid-template-columns: 1fr 1fr;
 }
 
 footer p {
     color: var(--accent2-color);
     font-size: 20px;
-    word-spacing: 15px;
-    line-height: 1.5;
+    /* word-spacing: clamp(5px, 3vw, 15px); */
+    /* background-color: blue; */
+    text-align: center;
 }
 
+footer p span {
+    padding: 0 5px;
+}
 .sociallinks {
     display: flex;
-    justify-content: space-evenly;
-    width: 40px;
-    margin: auto;
+    justify-content: center;
+    width: 100%;
+    /* background-color: #A3D473; */
+    align-items: center;
+    
 }
 
 .sociallinks a { 
     text-decoration: none;
     transition: all .3s ease;
+    text-align: center;
 }
 
 .sociallinks img {
-    width: 40px;
-    padding: 5px;
-    margin: 0 20px;
-    justify-content: space-evenly;
+    width: 30px;
+    padding: 2px;
+    /* margin: 0 20px; */
+    margin-left: 40px;
     box-shadow: 0 0 19px black;
     background-color: var(--nav-link-color);
-    display: block;
 }
 
 .sociallinks a:hover img {
     transform: scale(.9);
 }
+
+
+@media screen and (max-width:720px) {
+    header {
+        display: block;
+        padding: 20px;
+    }
+    header nav {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    header nav a {
+        padding: 1rem .1rem;
+        border: 2px solid;
+        border-color: #476C21 #334E18 #A3D473 #5C8C2B;
+    }
+    header img {
+        width: 200px;
+        padding-bottom: 20px;
+    }
+
+
+    h1 {
+        padding: 2px 80px;
+        top: 0;
+    }
+
+    article {
+        top: 30%;
+        padding: 5px 10px;
+    }
+    article p {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    article img {
+        margin: 10px;
+        width: 150px;
+        padding: 2px;
+    }
+
+    footer{
+        display: block;
+    }
+    footer p{
+        text-align: center;
+    }
+    .sociallinks img {
+        margin: 0 20px;
+    }
+
+}
+
+
+
+
+
+
+
