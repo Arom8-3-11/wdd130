@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Rock+Salt&family=RocknRoll+One&display=swap');
+
+
+:root {
+    --primary: steelblue;
+    --secondary: lightgray;
+    --tertiary: black;
+    --quatiary: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: trebuchet;
+    background-color: var(--secondary);
+}
+
+header {
+    margin: 20px auto;
+    padding: 5px 0;
+    font-size: clamp(16px, 1vw, 30px);
+    text-align: center;
+    color: var(--quatiary);
+    background-color: var(--primary);
+    box-shadow: 0 0 10px 5px var(--tertiary);
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 10px;
+}
+
+legend {
+    padding: .75rem;
+    font-size: clamp(1rem, 3vw, 25px);
+}
+
+label, input, button, select, textarea {
+    font-family: 'RocknRoll One', serif, trebuchet;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 3px;
+    font-size: 18px;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    display: block;
+    margin: 20px;
+    padding: 5px;
+    outline: 5px solid darkblue;
+    color: var(--tertiary);
+    background-color: var(--quatiary);
+    font-size: 18px;
+}
+
+button:hover {
+    color: var(--quatiary);
+    background-color: darkblue;
+    outline: 5px solid steelblue;
+}
+
+
+footer {
+    margin: 1rem auto ;
+    max-width: auto;
+    text-align: center;
+    font-size: 20px;
+    border-top: 2px solid var(--tertiary);
+    padding: 20px;
+}
+
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 5px;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 10px;
+}
