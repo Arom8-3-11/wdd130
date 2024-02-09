@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Rock+Salt&family=RocknRoll+One&display=swap');
+
+:root {
+    --primary: darkblue;
+    --secondary: lightgray;
+    --tertiary: black;
+    --quatiary: white;
+    --quintiary: lightblue;
+}
+
+* {
+    margin: 5px auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+
+body {
+    font-family: "rocknroll one", 'Times New Roman', Times, serif;
+    background-color: var(--quintiary);
+}
+
+
+header {
+    display: block;
+    margin: 20px auto;
+    padding: 5px 0;
+    font-size: clamp(16px, 1.5vw, 25px);
+    text-align: center;
+    color: var(--quatiary);
+    text-shadow: 3px 3px 8px var(--tertiary);
+    background-color: var(--primary);
+    box-shadow: 0 0 10px 5px var(--tertiary);
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 20px;
+    background-color: var(--secondary);
+}
+
+
+
+
+
+
+
+
