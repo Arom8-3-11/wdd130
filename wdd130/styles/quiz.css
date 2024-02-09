@@ -12,10 +12,7 @@
     margin: 5px auto;
     max-width: 1200px;
     box-sizing: border-box;
-    /* justify-content: center; */
-    /* text-align: center; */
 }
-
 
 body {
     font-family: "rocknroll one", 'Times New Roman', Times, serif;
@@ -37,14 +34,59 @@ header {
 
 fieldset {
     display: grid;
+    padding: 10px 5px;
+    max-width: 1000px;
     grid-gap: 20px;
     background-color: var(--secondary);
+    font-size: clamp(16px, 4vw, 20px);
+    font-family: trebuchet, 'Times New Roman', serif;
+}
+
+
+header, p, button {
+    text-align: center;
+}
+
+
+label {
+    text-align: left;
+    
+}
+
+
+
+button {
+    display: block;
+    margin: 5px auto;
+    width: 100px;
+    background-color: var(--primary);
+    color: var(--quatiary);
+}
+
+button:hover {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+}
+
+footer {
+    margin: 20px auto;
+    max-width: auto;
+    padding: 5px 0;
+    text-align: center;
+    font-size: clamp(18px, 2vw, 20px);
+    color: var(--quatiary);
+    background-color: var(--primary);
+    
 }
 
 
 
 
-
-
-
-
+@media screen and (max-width:1000px) {
+    header {
+        margin: 20px 5px;
+    }
+    fieldset {
+        margin: 0 10px;
+    }
+}
