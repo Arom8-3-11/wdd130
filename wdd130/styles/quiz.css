@@ -21,7 +21,6 @@ body {
 
 
 header {
-    display: block;
     margin: 20px auto;
     padding: 5px 0;
     font-size: clamp(16px, 1.5vw, 25px);
@@ -63,6 +62,13 @@ button {
     color: var(--quatiary);
 }
 
+.labelq4 {
+    display: block;
+    padding: 10px;
+    background-color: var(--tertiary);
+    color: var(--quintiary);
+    
+}
 button:hover {
     color: var(--tertiary);
     background-color: var(--secondary);
@@ -70,7 +76,7 @@ button:hover {
 
 footer {
     margin: 20px auto;
-    max-width: auto;
+    max-width: 1200;
     padding: 5px 0;
     text-align: center;
     font-size: clamp(18px, 2vw, 20px);
@@ -81,9 +87,13 @@ footer {
 
 
 
-
+@media  screen and (max-width: 1200) {
+    footer, header{
+        margin: 20px 5px;
+    }
+}
 @media screen and (max-width:1000px) {
-    header {
+    header, footer {
         margin: 20px 5px;
     }
     fieldset {
