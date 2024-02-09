@@ -9,16 +9,24 @@
 }
 
 * {
-    margin: 5px auto;
-    max-width: 1200px;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: "rocknroll one", 'Times New Roman', Times, serif;
+    font-family: trebuchet, 'Times New Roman', Times, serif;
     background-color: var(--quintiary);
 }
 
+header, fieldset, footer {
+    margin: 5px auto;
+}
+
+header, footer {
+    max-width: 1200px;
+    border: 1px solid black;
+    letter-spacing: 2px;
+}
 
 header {
     margin: 20px auto;
@@ -33,12 +41,14 @@ header {
 
 fieldset {
     display: grid;
-    padding: 10px 5px;
+    padding: 20px;
     max-width: 1000px;
     grid-gap: 20px;
     background-color: var(--secondary);
     font-size: clamp(16px, 4vw, 20px);
     font-family: trebuchet, 'Times New Roman', serif;
+    border: 2px solid black;
+    text-align: center;
 }
 
 
@@ -48,23 +58,26 @@ header, p, button {
 
 
 label {
-    text-align: left;
-    
+    border-bottom: 0.25px solid var(--tertiary);
+    max-width: fit-content;
 }
-
 
 
 button {
     display: block;
-    margin: 5px auto;
+    margin: auto;
+    padding: 5px;
     width: 100px;
+    font-size: clamp(16px, 2vw, 18px);
     background-color: var(--primary);
     color: var(--quatiary);
 }
 
 .labelq4 {
     display: block;
+    margin: auto;
     padding: 10px;
+    max-width: 300px;
     background-color: var(--tertiary);
     color: var(--quintiary);
     
@@ -76,26 +89,24 @@ button:hover {
 
 footer {
     margin: 20px auto;
-    max-width: 1200;
+    max-width: 1200px;
     padding: 5px 0;
     text-align: center;
     font-size: clamp(18px, 2vw, 20px);
     color: var(--quatiary);
+    text-shadow: 3px 3px 8px var(--tertiary);
     background-color: var(--primary);
-    
+    box-shadow: 0 0 10px 5px var(--tertiary);
 }
 
 
 
-@media  screen and (max-width: 1200) {
+@media  screen and (max-width: 1200px) {
     footer, header{
         margin: 20px 5px;
     }
 }
 @media screen and (max-width:1000px) {
-    header, footer {
-        margin: 20px 5px;
-    }
     fieldset {
         margin: 0 10px;
     }
