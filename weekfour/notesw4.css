@@ -1,0 +1,211 @@
+/* 
+------- flex --------
+
+- makes creating and controlling responsible layouts easy especially in one horizontal or vertical container
+
+
+
+------- flexbox --------
+
+- display: flex; = flexbox container
+- they can shrink and grow togeter if multiple flex in same container
+- it makes it horizonally
+- you can make it go collumn as well
+
+-if you want it to go horizontally, justify-content: center/space-between/space-around
+-column - align-items: stretch, 
+- align-items: flex-start to keep size of items, center; keeps same size but aligns on main axis
+flex-wrap: wrap; they will wrap on a different line
+align-content: flex-end; will align at bottom at the bottom, flex-start; aligns at the top
+
+-coluumn   flex-direction: column;
+            -justify content: center;
+
+
+--------- flex shrink --------
+
+flex-shrink: 0; will cause it when it shrinks to not shrink no matter what size the browser is
+flex-grow: 0; will not shrink no matter how much is given
+flex-basis: 0; will overide and tell the box where to start growing from
+will help create dynamic properties
+align-self: center; will overide other align-items
+
+flex: 1 0 0; flex grow, flex shrink, flex basis property
+
+order: #; will rearange the order of the display (not recommened)
+
+
+
+alignment
+
+cross-start=top
+main-start=left
+cross-end=bottom
+main-end=right
+
+
+
+
+------- grid -------
+
+- columns, rows
+- a collection of horizontal and vertical lines creating a pattern agains which we can line up out design elements
+
+
+diplay: grid; wont do anything yet
+grid-gap: 1em; will go in between each piece of the grid
+grid-template-rows: auto auto 1fr auto; 
+min-height: 100vh; -will make it so the main area may shrink but will allow shrink on the main axis
+
+grid-column: span2; will go across the whole top
+
+
+Explicit grid - is created using grid-template-columns or grid-template-rows.
+Implicit grid - extends the defined explicit grid when content is placed outside of that grid, such as into the rows by drawing additional grid lines.
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+}
+
+
+header {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+article {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+aside {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+footer {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+header {
+  grid-area: header;
+}
+
+article {
+  grid-area: content;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+
+The rules for grid-template-areas are as follows:
+
+You need to have every cell of the grid filled.
+To span across two cells, repeat the name.
+To leave a cell empty, use a . (period).
+Areas must be rectangular — for example, you can't have an L-shaped area.
+Areas can't be repeated in different locations.
+
+
+
+nesting grids:
+
+.articles {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: inherit;
+}
+
+article {
+  padding: 10px;
+  border: 2px solid rgb(79 185 227);
+  border-radius: 5px;
+}
+    html: 
+        <div class="container">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div id="subgrid">
+            <div>Five</div>
+            <div>Six</div>
+            <div>Seven</div>
+            <div>Eight</div>
+        </div>
+        <div>Nine</div>
+        <div>Ten</div>
+        </div>
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+}
+
+#subgrid {
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+  display: grid;
+  gap: inherit;
+  grid-template-columns: subgrid;
+  grid-template-rows: 2fr 1fr;
+}
+
+
+grid framwork:
+
+header {
+  grid-column: 1 / 13;
+  grid-row: 1;
+}
+
+article {
+  grid-column: 4 / 13;
+  grid-row: 2;
+}
+
+aside {
+  grid-column: 1 / 4;
+  grid-row: 2;
+}
+
+footer {
+  grid-column: 1 / 13;
+  grid-row: 3;
+}
+
+
+justify-content: center;
+
+
+
+
+
+
+*/

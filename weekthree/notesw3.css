@@ -1,0 +1,48 @@
+/* css selectors
+
+- first part of a css rule - h1{}
+
+- if more than one thing uses the same css name the individual selecors can be combined into a selector list so that the rule is applied to all of the individual selectors
+    -instead of doing h1{} .special{}
+        -h1, .special{}
+
+-white space is valid before or after the comma
+    - h1,
+    .special {}
+
+Type
+    h1{}
+
+class
+    .box{}
+
+ID
+    #unique{}
+
+Attribute selectors
+
+- a[title]{} or a[href="https://example.com"]{}
+
+
+pseudo-classes/elements
+
+- a:hover {} - p::first-line {}
+
+Combinators
+
+- final group of selectors combine other selectors in order to target elements within our documents
+    - article > p {}
+
+
+Universal - *{ ... } - applies to all elements
+type - h1 { ... } - applies to all <h1> elements
+class - .red { ... } - applies to all elements with the "red" class value
+    - can be applied to many elements on a doc.more than one class can be applied to a single elements
+ID - #red { ... } _ applies to one element with the "red" id value
+
+
+
+
+
+
+*/
