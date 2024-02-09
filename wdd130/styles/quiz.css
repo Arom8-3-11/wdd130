@@ -26,6 +26,11 @@ header, footer {
     max-width: 1200px;
     border: 1px solid black;
     letter-spacing: 2px;
+    text-shadow: 3px 3px 8px var(--tertiary);
+    color: var(--quatiary);
+    background-color: var(--primary);
+    box-shadow: 0 0 10px 5px var(--tertiary);
+    text-align: center;
 }
 
 header {
@@ -91,12 +96,7 @@ footer {
     margin: 20px auto;
     max-width: 1200px;
     padding: 5px 0;
-    text-align: center;
     font-size: clamp(18px, 2vw, 20px);
-    color: var(--quatiary);
-    text-shadow: 3px 3px 8px var(--tertiary);
-    background-color: var(--primary);
-    box-shadow: 0 0 10px 5px var(--tertiary);
 }
 
 
