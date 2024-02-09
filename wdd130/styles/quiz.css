@@ -46,6 +46,7 @@ header {
 
 fieldset {
     display: grid;
+    margin-top: 30px;
     padding: 20px;
     max-width: 1000px;
     grid-gap: 20px;
@@ -70,12 +71,13 @@ label {
 
 button {
     display: block;
-    margin: auto;
+    margin: 20px auto;
     padding: 5px;
     width: 100px;
     font-size: clamp(16px, 2vw, 18px);
     background-color: var(--primary);
     color: var(--quatiary);
+    border: 3px solid black;
 }
 
 .labelq4 {
@@ -85,11 +87,12 @@ button {
     max-width: 300px;
     background-color: var(--tertiary);
     color: var(--quintiary);
-    
 }
+
 button:hover {
     color: var(--tertiary);
     background-color: var(--secondary);
+    border: 3px solid white;
 }
 
 footer {
