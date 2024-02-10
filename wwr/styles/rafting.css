@@ -270,19 +270,39 @@ footer p span {
     border: 2px solid var(--accent2-color);
 }
 
+
+
 .home {
-    display: block;
+    display: grid;
+    margin: auto;
+    padding: 15px;
     font-size: clamp(16px, 4vw, 25px);
-    background-color: var(--nav-hover-background-color);
+    background-color: var(--accent1-color);
+    border: 1px solid black;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.address, .number, .email {
+    text-align: left;
+    column-span: all;
 }
 
 .home figure {
     display: flex;
-    max-width: 200px;
     height: auto;
+
 }
 
-
+.home img, .home figcaption{
+    width: clamp(200px, 20vw, 300px);
+}
+iframe {
+    width: clamp(200px, 34vw, 400px);
+    height: clamp(200px, 30vw, 400px);
+    border: 10px solid var(--accent2-color);
+}
 
 
 
@@ -305,19 +325,24 @@ form {
     letter-spacing: 1px;
 }
 
+.info input{
+    width: clamp(20px, 70vw, 900px)
+}
 fieldset {
     margin: 20px;
     border: 2px solid black;
     line-height: 2;
 }
 
-
 .q1 {
-    padding: 5px;
+    padding: 10px;
     color: var(--nav-hover-link-color);
     text-align: center;
     background-color: var(--accent1-color);
     text-shadow: none;
+    position: relative;
+    top: -26px;
+    font-size: clamp(1rem, 3vw, 30px);
 }
 
 legend {
@@ -426,4 +451,30 @@ button:hover {
         margin: 0 20px;
     }
 
+
+    .home {
+        grid-template-columns: 1fr;
+    }
+
+    .address, .number, .email {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
