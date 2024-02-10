@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, intitial-scale=1">
         <meta name="description" content="This page is how you can contact us at Splash">
         <meta name="author" content="Audrey Romrell">
-        <meta name="title" content="contact"> <!-- I had to include this in order to get the title to pass the github eval. -->
+        <!-- <meta name="title" content="contact"> -->
         <title>Contact Splash</title>
         <link rel="stylesheet" href="styles/rafting.css">
     </head>
@@ -25,33 +25,35 @@
             <h1>Contact us at: </h1>
 
             <div class="home">
-                <p class="address">Address: <br> 403 McEwen Dr., Belgrade, Montana, 59714</p>
-                <p class="number">Call: <br> (406)-595-3707</p>
-                <p class="email">Email: <br> GalaciForever@gmail.com</p>
-
+                <div >
+                    <p class="address">Address: <br> 403 McEwen Dr., Belgrade, Montana, 59714</p>
+                    <p class="number">Call: <br> (406)-595-3707</p>
+                    <p class="email">Email: <br> GalaciForever@gmail.com</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d188775.84456424773!2d-111.1611674060114!3d45.792791731767664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1707543558381!5m2!1sen!2sus"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 <div class="empolyees">
                     <figure>
-                        <img src="" alt="Employee One">
+                        <img src="images/employee3.jpg" alt="Employee One">
                             <figcaption>Owner: Trevor</figcaption>
                     </figure>
                     <figure>
-                        <img src="" alt="Employee Two">
+                        <img src="images/employee1.jpg" alt="Employee Two">
                             <figcaption>Co-Owner: Mellissa</figcaption>
                     </figure>
                     <figure>
-                        <img src="" alt="Employee Three">
+                        <img src="images/employee2.jpg" alt="Employee Three">
                             <figcaption>Assistant: Kyle</figcaption>
                     </figure>
                 </div>
             </div>
 
             <form>
-                <legend class="q1">Any Questions?</legend>
+                <p class="q1">Any Questions?</p>
                 <fieldset>
                     <legend>Contact Information</legend>
                     <div class="info">
-                        <label for="guest-name">Full Name: </label>
-                        <input type="text" id="quest-name" name="quest-name">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name">
                     </div>
                     <div class="info">
                         <label for="useremail">Email: </label>
@@ -62,7 +64,7 @@
                 <fieldset>
                     <legend>Questions</legend>
                     <div class="type">
-                        <label for="questions">What kind of questions: </label>
+                        <label>What kind of questions: </label>
 
                         <input class="radio" type="radio" id="general_inquiry" name="questions">
                         <label for="general_inquiry">General Inquiry</label>
