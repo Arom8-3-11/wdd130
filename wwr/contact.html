@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, intitial-scale=1">
         <meta name="description" content="This page is how you can contact us at Splash">
         <meta name="author" content="Audrey Romrell">
-        <meta name="title" content="contact us"> <!-- I had to include this in order to get the title to pass the github eval. -->
-        <title>Contact Us</title>
-        <link rel="stylesheet" href="styles/.css">
+        <meta name="title" content="contact"> <!-- I had to include this in order to get the title to pass the github eval. -->
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles/rafting.css">
     </head>
 
-    <body>
+    <body class="contact">
         <header>
             <img src="images/logo.png" alt="Rafting Site Logo">
                 <nav>
@@ -24,21 +24,69 @@
         <main>
             <h1>Contact us at: </h1>
 
-            <div>
+            <div class="home">
                 <p class="address">Address: <br> 403 McEwen Dr., Belgrade, Montana, 59714</p>
                 <p class="number">Call: <br> (406)-595-3707</p>
                 <p class="email">Email: <br> GalaciForever@gmail.com</p>
 
+                <div class="empolyees">
+                    <figure>
+                        <img src="" alt="Employee One">
+                            <figcaption>Owner: Trevor</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="" alt="Employee Two">
+                            <figcaption>Co-Owner: Mellissa</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="" alt="Employee Three">
+                            <figcaption>Assistant: Kyle</figcaption>
+                    </figure>
+                </div>
             </div>
 
             <form>
+                <legend class="q1">Any Questions?</legend>
                 <fieldset>
-                    <label></label>
-                    <label></label>
+                    <legend>Contact Information</legend>
+                    <div class="info">
+                        <label for="guest-name">Full Name: </label>
+                        <input type="text" id="quest-name" name="quest-name">
+                    </div>
+                    <div class="info">
+                        <label for="useremail">Email: </label>
+                        <input type="email" name="useremail" id="useremail">
+                    </div>
                 </fieldset>
-                <fieldset>
 
+                <fieldset>
+                    <legend>Questions</legend>
+                    <div class="type">
+                        <label for="questions">What kind of questions: </label>
+
+                        <input class="radio" type="radio" id="general_inquiry" name="questions">
+                        <label for="general_inquiry">General Inquiry</label>
+
+                        <input class="radio" type="radio" id="reservation" name="questions">
+                        <label for="reservation">Reservation Question</label>
+
+                        <input class="radio" type="radio" id="suggestion" name="questions">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                    <div class="q3">
+                        <label class="quest" for="question">What is your question?</label>
+                        <textarea id="question" name="question" rows="4" placeholder="Enter your question here"></textarea>
+                    </div>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Optional</legend>
+                    <div class="news">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                    </div>
+                </fieldset>
+                <button type="submit">Submit</button>
             </form>
         </main>
 
