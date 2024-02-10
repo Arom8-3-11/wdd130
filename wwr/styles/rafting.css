@@ -15,8 +15,7 @@
     --nav-hover-background-color: #214083;
 }
 
-
-body {
+body  {
     max-width: 1200px;
     width: 100%;
     margin: auto;
@@ -165,7 +164,7 @@ section p{
     flex-wrap: wrap;
 }
 
-figure {
+.figimg figure {
     flex-flow: column;
     width: 100%;
     max-width: 200px;
@@ -173,7 +172,7 @@ figure {
     padding: 10px;
     margin: 10px;
 }
-section figure img {
+section img {
     margin: auto;
     margin-bottom: 10px;
     width:100%;
@@ -274,44 +273,38 @@ footer p span {
 
 .home {
     display: grid;
-    margin: auto;
-    padding: 15px;
-    font-size: clamp(16px, 4vw, 25px);
+    /* margin: auto; */
+    font-size: clamp(16px, 4.5vw, 30px);
     background-color: var(--accent1-color);
-    border: 1px solid black;
+    border: 1px solid var(--accent2-color);
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    place-items: center;
 }
-
 .address, .number, .email {
-    text-align: left;
-    column-span: all;
+    padding: 0 5px;
+    text-align: center;
+    width: clamp(200px, 40vw, 400px);
 }
 
-.home figure {
+
+.home img {
     display: flex;
+    /* flex-wrap: wrap; */
+    /* text-align: center; */
+    border: 3px solid var(--accent2-color);
+    width: clamp(200px, 30vw, 300px);
     height: auto;
-
 }
 
-.home img, .home figcaption{
-    width: clamp(200px, 20vw, 300px);
-}
 iframe {
-    width: clamp(200px, 34vw, 400px);
-    height: clamp(200px, 30vw, 400px);
-    border: 10px solid var(--accent2-color);
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    width: clamp(200px, 40vw, 400px);
+    height: clamp(200px, 40vw, 400px);
+    border: 5px solid var(--accent2-color);
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -329,7 +322,7 @@ form {
     width: clamp(20px, 70vw, 900px)
 }
 fieldset {
-    margin: 20px;
+    margin: auto;
     border: 2px solid black;
     line-height: 2;
 }
@@ -341,8 +334,9 @@ fieldset {
     background-color: var(--accent1-color);
     text-shadow: none;
     position: relative;
-    top: -26px;
+    top: -30px;
     font-size: clamp(1rem, 3vw, 30px);
+    border: 2px solid black;
 }
 
 legend {
@@ -362,7 +356,7 @@ label {
 
 textarea {
     margin: 0 auto;
-    width: clamp(200px, 70vw, 900px);
+    width: clamp(100px, 70vw, 900px);
     height: 50px
     
 }
@@ -374,7 +368,7 @@ textarea {
 button {
     padding: 10px;
     display: block;
-    margin: auto;
+    margin: 15px auto;
     margin-bottom: 15px;
     width: 100px;
     color: var(--nav-link-color);
@@ -448,7 +442,7 @@ button:hover {
         text-align: center;
     }
     .sociallinks img {
-        margin: 0 20px;
+        margin: 0 10px;
     }
 
 
@@ -461,13 +455,21 @@ button:hover {
     }
 
 
+    .iframe {
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 200px;
+        border: 5px solid var(--accent2-color);
+    }
 
+    legend {
+        text-align: center;
+    }
 
-
-
-
-
-
+    .q1 {
+        top: -17px;
+    }
 
 
 
