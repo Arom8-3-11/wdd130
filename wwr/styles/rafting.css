@@ -283,15 +283,13 @@ footer p span {
 }
 .address, .number, .email {
     padding: 0 5px;
-    text-align: center;
+    text-align: left;
     width: clamp(200px, 40vw, 400px);
 }
 
 
 .home img {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* text-align: center; */
     border: 3px solid var(--accent2-color);
     width: clamp(200px, 30vw, 300px);
     height: auto;
