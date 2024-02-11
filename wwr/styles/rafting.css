@@ -283,7 +283,7 @@ footer p span {
 }
 .address, .number, .email {
     padding: 0 5px;
-    text-align: center;
+    text-align: left;
     width: clamp(200px, 40vw, 400px);
 }
 
