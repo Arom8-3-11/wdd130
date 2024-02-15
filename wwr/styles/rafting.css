@@ -273,26 +273,30 @@ footer p span {
 
 .home {
     display: grid;
-    /* margin: auto; */
     font-size: clamp(16px, 4.5vw, 30px);
     background-color: var(--accent1-color);
     border: 1px solid var(--accent2-color);
     grid-template-columns: 1fr 1fr;
     width: 100%;
     place-items: center;
+    letter-spacing: 2px;
 }
 .address, .number, .email {
     padding: 0 5px;
     text-align: left;
     width: clamp(200px, 40vw, 400px);
+    text-shadow: 7px 7px 3px black;
+
 }
 
 
 .home img {
     display: flex;
-    border: 3px solid var(--accent2-color);
+    border: 3px solid black;
     width: clamp(200px, 30vw, 300px);
     height: auto;
+    box-shadow: 0 0 5px white;
+
 }
 
 iframe {
@@ -301,7 +305,8 @@ iframe {
     align-items: center;
     width: clamp(200px, 40vw, 400px);
     height: clamp(200px, 40vw, 400px);
-    border: 5px solid var(--accent2-color);
+    border: 5px solid black;
+    box-shadow: 0 0 15px white;
 }
 
 
@@ -309,15 +314,17 @@ iframe {
 
 form {
     margin-top: 40px;
-    background-color: var(--accent2-color);
+    background-color: lightgray;
     color: black;
     text-shadow: 0 0 3px white;
     border: 2px solid black;
     letter-spacing: 1px;
+    font-weight: 300;
+    box-shadow: 0 0 10px var(--accent2-color);
 }
 
 .info input{
-    width: clamp(20px, 70vw, 900px)
+    width: clamp(20px, 70vw, 900px);
 }
 fieldset {
     margin: auto;
@@ -363,6 +370,17 @@ textarea {
     margin-bottom: 10px;
 }
 
+.home figcaption {
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: black;
+    border: 2px solid black;
+    text-shadow: 0 0 5px white;
+    background-color: var(--accent2-color);
+    box-shadow: 0 0 2px white;
+
+}
+
 button {
     padding: 10px;
     display: block;
@@ -391,6 +409,11 @@ button:hover {
 
 
 
+
+
+.trip h1 {
+    top: 33px;
+}
 
 
 
