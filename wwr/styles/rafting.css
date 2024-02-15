@@ -4,7 +4,8 @@
     --primary-color: #EBECE9;
     --secondary-color: #476C21;
     --accent1-color: #122347;
-    --accent2-color: #90AFCB;
+    --accent2-color: #93B3CC;
+    /* --accent2-color: #90AFCB; */
 
     --heading-font: 'RocknRoll One', serif, trebuchet;
     --paragraph-font: 'Instrument Serif', serif, trebuchet;
@@ -223,8 +224,9 @@ footer {
 
 footer p {
     color: var(--accent2-color);
-    font-size: 20px;
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
     text-align: center;
+    letter-spacing: 1px;
 }
 
 footer p span {
@@ -314,7 +316,7 @@ iframe {
 
 form {
     margin-top: 40px;
-    background-color: lightgray;
+    background-color: var(--accent2-color);
     color: black;
     text-shadow: 0 0 3px white;
     border: 2px solid black;
@@ -375,7 +377,7 @@ textarea {
     font-size: 25px;
     color: black;
     border: 2px solid black;
-    text-shadow: 0 0 5px white;
+    /* text-shadow: 0 0 5px white; */
     background-color: var(--accent2-color);
     box-shadow: 0 0 2px white;
 
