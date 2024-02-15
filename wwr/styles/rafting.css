@@ -275,6 +275,7 @@ footer p span {
 
 .home {
     display: grid;
+    margin: 0 auto;
     font-size: clamp(16px, 4.5vw, 30px);
     background-color: var(--accent1-color);
     border: 1px solid var(--accent2-color);
@@ -284,16 +285,20 @@ footer p span {
     letter-spacing: 2px;
 }
 .address, .number, .email {
-    padding: 0 5px;
+    margin: 30px auto;
+    /* padding: 0 5px; */
     text-align: left;
-    width: clamp(200px, 40vw, 400px);
-    text-shadow: 7px 7px 3px black;
+    width: 100%;
+    /* text-shadow: 3px 3px 3px black; */
 
 }
-
+.address p {
+    margin: 0;
+}
 
 .home img {
     display: flex;
+    margin: auto;
     border: 3px solid black;
     width: clamp(200px, 30vw, 300px);
     height: auto;
@@ -301,14 +306,27 @@ footer p span {
 
 }
 
+.home figcaption {
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: black;
+    border: 2px solid black;
+    /* text-shadow: 0 0 5px white; */
+    background-color: var(--accent2-color);
+    box-shadow: 0 0 2px white;
+
+}
+
 iframe {
-    margin-top: 5px;
+    display: block;
+    margin: 10px auto;
     justify-content: center;
     align-items: center;
-    width: clamp(200px, 40vw, 400px);
+    width: 100%;
     height: clamp(200px, 40vw, 400px);
     border: 5px solid black;
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 5px white;
+    box-sizing: border-box;
 }
 
 
@@ -316,13 +334,15 @@ iframe {
 
 form {
     margin-top: 40px;
-    background-color: var(--accent2-color);
+    background-color: lightgray;
     color: black;
     text-shadow: 0 0 3px white;
     border: 2px solid black;
     letter-spacing: 1px;
     font-weight: 300;
     box-shadow: 0 0 10px var(--accent2-color);
+    padding: 15px;
+
 }
 
 .info input{
@@ -332,6 +352,7 @@ fieldset {
     margin: auto;
     border: 2px solid black;
     line-height: 2;
+    /* padding: 0 5px; */
 }
 
 .q1 {
@@ -372,16 +393,6 @@ textarea {
     margin-bottom: 10px;
 }
 
-.home figcaption {
-    letter-spacing: 2px;
-    font-size: 25px;
-    color: black;
-    border: 2px solid black;
-    /* text-shadow: 0 0 5px white; */
-    background-color: var(--accent2-color);
-    box-shadow: 0 0 2px white;
-
-}
 
 button {
     padding: 10px;
@@ -475,8 +486,8 @@ button:hover {
 
     .address, .number, .email {
         text-align: center;
+        justify-content: center;
     }
-
 
     .iframe {
         justify-content: center;
@@ -495,7 +506,9 @@ button:hover {
     }
 
 
-
+    .general-info {
+        
+    }
 
 
 
