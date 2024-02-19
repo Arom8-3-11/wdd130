@@ -106,22 +106,21 @@ p {
 }
 
 h1 {
+    width: 100%;
+    padding: 10px 0;
     font-family: var(--heading-font);
-    /* font-size: clamp(28px, 4vw, 60px); */
+    font-size: clamp(20px, 4vw, 60px);
     text-align: center;
     text-shadow: 7px 7px 8px var(--accent1-color);
-    text-decoration: underline;
     position: absolute; 
-    top: 22px;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%); /* this helps with absolute centering */
     display:block;
     padding: 5px 170px;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.about h1 {
-    font-size: clamp(28px, 4vw, 60px);
-}
+
 article {
     position: absolute;
     top: 40%;
@@ -137,8 +136,10 @@ article {
 
 article p {
     display: block;
-    padding: 20px 0 0 5px;
+    position: relative;
+    top: 20px;
     text-align: left;
+    font-size: clamp(18px, 3vw, 35px);
 
 }
 
@@ -174,6 +175,7 @@ section p{
     padding: 0;
     padding: 10px;
     margin: 10px;
+    background-color: var(--accent1-color);
 }
 section img {
     margin: auto;
@@ -193,23 +195,28 @@ figcaption{
     padding: 6px 2px 8px;
     text-align: center;
     font: var(--paragraph-font);
-    font-size: 20px;
+    font-size: 25px;
     justify-content: center;
-    background-color: #334E18;
+    background-color: var(--accent1-color);
+    letter-spacing: 2;
+    box-shadow: 0 0 2px white;
+    border: 2px solid black;
+
 }
 
-div img {
-    display: flex;
-    place-items: center;
-}
 
-h2 {
+
+h2, .trip h1, .contact h1{
+    margin: 40px auto;
     font-family: var(--heading-font);
     font-size: clamp(24px, 3vw, 35px);
     text-align: center;
-    text-decoration: underline;
-    text-shadow: 7px 7px 8px var(--accent1-color) ;
-    text-decoration: underline;
+    background-color: var(--accent1-color);
+    text-decoration: none;
+    background-color: #0A1328;
+    border: 2px solid var(--accent2-color);
+    padding: 10px 0;
+    
 }
 
 /***** footer *****/
@@ -261,16 +268,9 @@ footer p span {
 
 
 
-
-
-
-
 .contact h1 {
-    font-size: clamp(25px, 4vw, 60px);
     position: relative;
     top: -40px;
-    background-color: var(--nav-background-color);
-    border: 2px solid var(--accent2-color);
 }
 
 .home {
@@ -305,13 +305,8 @@ footer p span {
 }
 
 .home figcaption {
-    letter-spacing: 2px;
-    font-size: 25px;
     color: black;
-    border: 2px solid black;
     background-color: var(--accent2-color);
-    box-shadow: 0 0 2px white;
-
 }
 
 iframe {
@@ -416,13 +411,7 @@ button:hover {
     position: relative;
     top: -40px;
 }
-.trip h1, .trip h2, .rafthome h2, .contact h1{
-    background-color: #0A1328;
-    border: 2px solid var(--accent2-color);
-    padding: 10px 0;
-    text-decoration: none;
-    margin: 40px auto;
-}
+
 
 .location aside{
     margin: 10px auto;
@@ -443,11 +432,9 @@ button:hover {
     padding: 10px 0;
     line-height: 1.2;
     border-top: 2px solid var(--accent2-color);
+    background-color: var(--accent1-color);
 }
-.location aside, .location p, .location figcaption, .location figure{
-    background-color: #0A1328;
-    letter-spacing: 2px;
-}
+
 
 .now nav {
     margin: 100px auto;
@@ -480,14 +467,11 @@ button:hover {
     border: solid white;
     border-width: 0 1px 1px 0;
 }
-
 .now nav a:hover::before,
 .now nav a:hover::after {
     width: calc(100% + 29px);
     height: calc(100% + 29px);
 }
-
-
 .now nav a:hover {
     transform: scale(.85);
     transition: all .3s ease;
@@ -502,20 +486,16 @@ button:hover {
     padding: 8px 20px;
     margin: auto;
 }
-
 .triptable th {
     font-size: clamp(1rem, 3vw, 1.5rem);
     background-color: var(--accent1-color);
     border-color: var(--accent2-color);
 }
-
-
 .triptable td {
     text-align: center;
     background-color: var(--nav-link-color);
     color: var(--accent1-color);
 }
-
 .triptable td:first-child {
     text-align: left;
     background-color: var(--accent2-color);
@@ -524,28 +504,16 @@ button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-.head {
+/* .head {
     font: clamp(18px, 7vw, 30px);
     padding: 10px 0;
     width: 100%;
     top: 10%;
-}
+} */
 .rafthome article {
     top: 50%;
 }
-.rafthome article p {
-    font-size: clamp(18px, 3vw, 35px);
-    padding: 0;
-}
+
 
 .tripform {
     margin: 40px auto;
@@ -601,8 +569,9 @@ button:hover {
         padding: 5px 10px;
     }
     article p {
-        top: 1px;
+        top: 20px;
         font-size: 18px;
+    
     }
     article img {
         top: 5px;
