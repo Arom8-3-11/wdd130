@@ -364,8 +364,9 @@ fieldset {
 }
 
 legend {
-    padding: 0 .75rem;
+    /* padding: 0 .75rem; */
     font-size: clamp(1rem, 3vw, 25px);
+    text-align: center;
 }
 
 label {
@@ -629,10 +630,6 @@ legend) */
         border: 5px solid var(--accent2-color);
     }
 
-    legend {
-        text-align: center;
-    }
-
     .q1 {
         top: -17px;
     }
@@ -640,8 +637,6 @@ legend) */
     .now nav{
         margin: 10px auto;
     }
-    .extra p {
-        padding: 0;
-    }
+
 }
 
