@@ -538,7 +538,31 @@ button:hover {
     margin: auto;
     max-width: 300px;
 }
-
+/* (.address, - - - - - - 
+.contact h1,--------------
+.email, - - - - - - 
+.extra p, - - - - - - 
+.home,
+.now nav,
+.now nav a,
+.now nav a:after,
+.now nav a:hover,
+.number,
+.q1,
+.sociallinks img,
+.trip h1,
+.triptable td,
+.triptable th,
+article,
+article img,
+article p,
+footer,
+footer p,
+h1,
+header,
+header img,
+header nav,
+legend) */
 @media screen and (max-width:720px) {
     header {
         display: block;
@@ -621,28 +645,3 @@ button:hover {
     }
 }
 
-/* (.address, - - - - - - 
-.contact h1,--------------
-.email, - - - - - - 
-.extra p, - - - - - - 
-.home,
-.now nav,
-.now nav a,
-.now nav a:after,
-.now nav a:hover,
-.number,
-.q1,
-.sociallinks img,
-.trip h1,
-.triptable td,
-.triptable th,
-article,
-article img,
-article p,
-footer,
-footer p,
-h1,
-header,
-header img,
-header nav,
-legend) */
