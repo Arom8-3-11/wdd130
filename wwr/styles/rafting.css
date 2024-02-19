@@ -197,7 +197,7 @@ figcaption{
     font-size: 25px;
     justify-content: center;
     background-color: var(--accent1-color);
-    letter-spacing: 2;
+
     box-shadow: 0 0 2px white;
     border: 2px solid black;
 
