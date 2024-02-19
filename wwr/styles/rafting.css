@@ -117,7 +117,6 @@ h1 {
     left: 50%;
     transform: translateX(-50%); /* this helps with absolute centering */
     display:block;
-    padding: 5px 170px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -206,7 +205,7 @@ figcaption{
 
 
 
-h2, .trip h1, .contact h1{
+h2, .trip h1{
     margin: 40px auto;
     font-family: var(--heading-font);
     font-size: clamp(24px, 3vw, 35px);
@@ -269,6 +268,15 @@ footer p span {
 
 
 .contact h1 {
+    margin: 40px auto;
+    font-family: var(--heading-font);
+    font-size: clamp(24px, 3vw, 35px);
+    text-align: center;
+    background-color: var(--accent1-color);
+    text-decoration: none;
+    background-color: #0A1328;
+    border: 2px solid var(--accent2-color);
+    padding: 10px 0;
     position: relative;
     top: -40px;
 }
@@ -502,14 +510,6 @@ button:hover {
 }
 
 
-
-
-/* .head {
-    font: clamp(18px, 7vw, 30px);
-    padding: 10px 0;
-    width: 100%;
-    top: 10%;
-} */
 .rafthome article {
     top: 50%;
 }
@@ -522,14 +522,10 @@ button:hover {
    text-align: center;
    font-size: clamp(1rem, 5vw, 1.3rem);
 }
-
-
 .extra {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
     background-color: black;
-    
 }
 .extra img{
     width: 100%;
@@ -625,3 +621,28 @@ button:hover {
     }
 }
 
+/* (.address, - - - - - - 
+.contact h1,--------------
+.email, - - - - - - 
+.extra p, - - - - - - 
+.home,
+.now nav,
+.now nav a,
+.now nav a:after,
+.now nav a:hover,
+.number,
+.q1,
+.sociallinks img,
+.trip h1,
+.triptable td,
+.triptable th,
+article,
+article img,
+article p,
+footer,
+footer p,
+h1,
+header,
+header img,
+header nav,
+legend) */
