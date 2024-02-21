@@ -3,10 +3,8 @@
 :root {
     --primary-color: #EBECE9;
     --secondary-color: #476C21;
-    /* --accent1-color: #122347; */
     --accent1-color: #0A1328;
     --accent2-color: #93B3CC;
-    /* --accent2-color: #90AFCB; */
 
     --heading-font: 'RocknRoll One', serif, trebuchet;
     --paragraph-font: 'Instrument Serif', serif, trebuchet;
@@ -633,11 +631,5 @@ legend) */
     .home {
         grid-template-columns: 1fr;
     }
-   
-
-
-   
-
-
 }
 
