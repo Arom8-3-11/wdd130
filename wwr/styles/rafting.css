@@ -213,7 +213,9 @@ h2, .trip h1{
     background-color: #0A1328;
     border: 2px solid var(--accent2-color);
     padding: 10px 0;
-    
+}
+.trip h1, .contact h1 {
+    font-size: clamp(24px, 4vw, 45px);
 }
 
 /***** footer *****/
@@ -617,7 +619,7 @@ legend) */
         justify-content: center;
     } */
 
-    footer{
+    /* footer{
         display: block;
     }
     footer p{
@@ -625,7 +627,7 @@ legend) */
     }
     .sociallinks img {
         margin: 0 10px;
-    }
+    } */
 
 
     .home {
